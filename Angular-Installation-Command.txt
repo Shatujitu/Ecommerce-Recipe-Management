@@ -1,0 +1,32 @@
+### Provided by Shehabul Alam ### Facebook: https://facebook.com/jitu.shatu ### GitHub: https://bit.ly/2GpDTy3 ### 
+
+** Install LTS version of Node.js® from https://nodejs.org/
+** Install Stable Build of VS Code from https://code.visualstudio.com/
+
+NOTE: Set PATH for node.js and VScode
+
+* Open cmd/cmder
+> node --version			//Check Node Version
+> npm --version				//Check Node Package Manager Version. (npm tool used to install 3rd party library)
+> npm install -g @angular/cli 		//Angular CLI (Command-Line-Interface) is a library is used for create new project
+> ng --version				//Check Angular CLI Version
+
+* Create a project at G:\Angular location
+> G:					//Open cmd then go to G Drive
+> dir					//(Optional) Check all directory of G Drive
+> cd Angular				//Go to Angular Folder. For back to previous folder the command is: cd..
+> ng new hello-world			//Create New Project name as hello-world . Ask Two Question 
+						1. Would you like to add Angular routing ? N
+						2. Which stylesheet format would you like to use ? CSS
+> cd hello-world			//Go to Project (hello-world) Folder
+> code .				//Open Project (hello-world) at Visual Studio Code
+> ng serve				//Load Project to Web-Server. ex: http://localhost:4200 **
+
+* Install bootstrap@3 in Angular project by VScode Terminal
+> npm install --save bootstrap@3		//Install bootstrap@3 to Project Folder (node_modules)
+
+NOTE: After installation of bootstrap@3 there are two ways to works properly bootstrap.
+	1. open angular.json then put "node_modules/bootstrap/dist/css/bootstrap.min.css", in "styles":[] section before "src/styles.css" command. note. there are two "styles"[] section 1. "build":{} 2. "test":{} . Always use "build":{} section.
+	2. open style.css then put @import "../node_modules/bootstrap/dist/css/bootstrap.css" in the top line.
+					
+
